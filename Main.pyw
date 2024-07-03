@@ -84,6 +84,9 @@ try:
         browser = ' '.join([
         "chromium",
         "--allow-silent-push",
+        "--enable-webgl",
+        "--ignore-gpu-blacklist",
+        "--disable-gpu",
         f'--window-name="{Profile} - Url {UrlIndex}"',
         f"--profile-directory={Profile}",
         f"--user-data-dir={AppPath}/WebProfiles/{Profile}/UserData{UrlIndex}",
